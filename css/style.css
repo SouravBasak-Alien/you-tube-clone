@@ -1,0 +1,286 @@
+@import url(./common.css);
+
+:root{
+	--primary:#fff;
+	--secondary:#202020;
+	--black:#181818;
+	--gray:#4C4C4C;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: var(--secondary);
+	font-family: 'Roboto', sans-serif;
+
+}
+a{
+	text-decoration: none;
+	color: var(--primary);
+}
+li{
+	list-style: none;
+}
+.container{
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+/* header css start */
+header{
+	padding: 10px 0;
+}
+.header-search{
+	width: 100%;
+}
+.header-search input{
+	padding: 11px;
+    font-size: 17px;
+    width: 100%;
+    background: #f1f1f1;
+    border: 1px solid grey;
+	height: 40px;
+	border: none;
+	outline: none;
+	border:1px solid var(--gray);
+	background-color: var(--black);
+}
+.header-search button{
+ width: 12%;
+    padding: 11px;
+    background:var(--gray);
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+	height: 40px;
+}
+.search-header span{
+	padding: 10px 15px;
+	background-color: var(--black);
+	font-size: 1.3rem;
+	color: var(--primary);
+	margin-left: 20px;
+	border-radius: 50%;
+}
+header .nav-btn button{
+	background-color: var(--secondary);
+	outline: none;
+	font-size: 1.5rem;
+	color: var(--primary);
+	border: 0;
+	font-weight: 300;
+	margin-right: 3.5rem;
+}
+
+header .brand-logo{
+	width: 100px;
+	background-color: #f1f1f1;
+}
+.header-right ul{
+	justify-content: end;
+}
+.header-right ul li{
+	margin-left: 40px;
+	color: var(--primary);
+	font-size:  1.3em; ;
+}
+.header-left{
+	flex: 2;
+}
+.header-middle{
+	flex: 3;
+}
+.header-right{
+	flex: 2;
+	
+}
+/* header css end */
+/* main css start */
+main .main-left{
+	flex: 1;
+}
+main .main-right{
+	flex: 5;
+}
+main .main-left .left-primary{
+	border-bottom: 0.7px solid var(--gray);
+	padding: 1rem 0;
+	display: inline-block;
+}
+main .main-left .left-primary ul li{
+	padding: 10px 0;
+}
+main .main-left .left-primary ul li:hover{
+	background-color: #414141;
+}
+
+main .main-left .left-primary ul li a{
+	font-size: 1rem;
+	padding-right: 3rem;
+}
+main .main-left .left-primary ul li a span{
+	margin-right: 15px;
+
+}
+main .main-left .left-primary ul li a h4{
+	font-weight: 400;
+}
+main .main-left .short-link{
+	padding-top: 20px;
+	padding-right: 44px;
+
+}
+main .main-left .short-link a{
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 18px;
+	color: #aaaaaa
+	;
+}
+
+main .main-left .short-link span{
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #717171;
+}
+/* main css end */
+/* main right css start */
+.main-right .category-filter{
+	border-top: 1px solid var(--gray);
+	border-bottom: 1px solid var(--gray);
+	padding: 10px 0;
+}
+.main-right .category-filter ul li {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--primary);
+    padding: 5px 12px;
+    display: inline-block;
+    background-color: rgb(255, 255, 255, 10%);
+    border: 1px solid rgb(255, 255, 255,10%);
+    border-radius: 20px;
+	margin-left: 10px;
+	cursor: pointer;
+	transition: 0.3s all ease;
+}
+.main-right .category-filter ul li:hover{
+	background-color: var(--gray);
+}
+.main-right .category-filter ul li.active{
+	background-color: var(--primary);
+	color: var(--black);
+}
+/* main right css end */
+/* content css start  */
+.yt-content{
+	display: grid;
+	grid-template-columns: repeat(4,minmax(0,1fr));
+	grid-gap: 1.5rem;
+	background-color: var(--black);
+	padding: 25px;
+}
+.yt-content .item .content-img img{
+	width: 100%;
+}
+.yt-content .item .content{
+	margin-top: 0.7rem;
+}
+.yt-content .item .content img{
+	height: 40px;
+    border-radius: 50%;
+	margin-right: 0.9rem;
+
+}
+.yt-content .item .content-text h3{
+	font-size: 14px;
+	line-height: 20px;
+	width: 500;
+	color: var(--primary);
+	margin-bottom: 5px;
+}
+.yt-content .item .content-text a{
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: 500;
+	color: #aaaaaa;
+}
+.yt-content .item .content-text a i{
+	margin-left: 5px;
+}
+.yt-content .item .content-text .footer-content span{
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: 400;
+	color: #aaaaaa;
+	margin-right: 3px;
+} 
+.yt-content .item .content-text .footer-content span.view::after{
+	content: "•";
+    margin: 0 1px;
+}
+
+
+/* responsive css start */
+@media(max-width:1024px){
+	.container{
+		max-width: 990px;
+	}
+
+main .main-left .left-primary ul li a{
+	flex-direction: column;
+}
+main .main-left .left-primary ul li a h4{
+	font-size: 0.7rem;
+	margin-top: 10px;
+}
+
+.yt-content{
+	grid-template-columns: repeat(3,minmax(0,1fr))
+}
+}
+@media (max-width:576px) {
+	
+	.container{
+		max-width: 500px;
+	}
+	.main-left{
+		display: none;
+	}
+	.yt-content{
+		grid-template-columns: repeat(1,minmax(0,1fr))
+	}
+	header .nav-btn {
+		display: none;
+	}
+	.search-header span{
+		padding: 5px 10px;
+		font-size: 20px;
+	}
+	.header-right  {
+		display: none;
+	}
+	header .brand-logo{
+		width: 60px;
+		height: 20px;
+	}
+	.header-search input{
+		height: 35px;
+	}
+	.header-search button{
+		height: 35px;
+		width: 20%;
+	}
+	.header-middle {
+		flex: 7;
+	}
+
+}
+/* responsive css end */
+
+
